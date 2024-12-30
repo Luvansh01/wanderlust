@@ -1,0 +1,35 @@
+<!-- <h1>Flash Message for success</h1> -->
+<!-- success is an array, if we'll write only div then an empty alert box will always be tehre on the webpage -->
+
+<!-- <% if(success && success.length){ %>
+<div class="alert alert-success col-6 offset-3 alert-dismissible fade show" role="alert">
+    <%= success %>
+</div>
+<% } %> -->
+
+<% if(success && success.length){ %>
+    <div class="alert alert-success col-6 offset-3 alert-dismissible fade show" role="alert">
+        <%= success %>
+        <button 
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="alert" 
+        aria-label="Close"></button>
+        </button>
+    </div>
+    <% } %>
+    
+    
+<% if(error && error.length){ %>
+    <div class="alert alert-danger col-6 offset-3 alert-dismissible fade show" role="alert">
+        <%= error %>
+        <button 
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="alert" 
+        aria-label="Close">
+        </button>
+    </div>
+    <% } %>
+    
+    
